@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+  }
+  
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgb(245, 83, 83);
+  }
+
+.all-content{
+    background: white;
+}
+
+/*navbar start*/
+#navbar{
+    background-color: rgb(241, 189, 189);
+}
+#logo{
+    font-size: 1.5em;
+    width: 2em;
+    margin-right: 4.5em;
+    margin-left: .5em;
+}
+.navbar-nav{
+    margin-left: 3em;
+}
+.nav-item .nav-link{
+    color: black;
+    margin-left: 5px;
+    font-weight: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+.nav-item .link1{
+    background: rgb(245, 83, 83);
+    color: white ;
+    margin-left: 5px;
+    font-weight: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: rgb(245, 83, 83);
+    color: white ;
+}
+.nav-item .link1:hover{
+    color: black;
+    background: rgb(241, 189, 189);
+    margin-left: 5px;
+    font-weight: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(245, 83, 83);
+    transition: 0.5s ease;
+}
+#navbar form button{
+    background: rgb(241, 189, 189);
+    color: rgb(245, 83, 83);
+    border: 1px solid rgb(245, 83, 83);
+    transition: 0.5s;
+}
+#navbar form button:hover{
+    background: rgb(245, 83, 83);
+    color: rgb(241, 189, 189);
+    border: 1px solid rgb(245, 83, 83);
+}
+/*navbar end*/
+
+/*home section start*/
+#home{
+    width: 100%;
+    height: 80vh;
+    background-image: url(./imgs/img1.png);
+    background-repeat: no-repeat;
+    background-position:70%;
+}
+#home .content{
+    padding-top: 10em;
+    margin-left: 5em;
+}
+#home .content h3{
+    font-size: 2.2em;
+    font-family: 'Sevillana' serif;
+    color:black ;
+}
+#home .content p{
+    font-size: 15px;
+    color: black;
+}
+#btn{
+    width: 10em;
+    height: 2em;
+    margin-top: 20px;
+    background: white;
+    border-radius: 0.5em;
+    font-weight: bold;
+    border: 1px solid rgb(245, 83, 83);
+    transition: 0.5s ease;
+}
+#btn:hover{
+    background-color:rgb(245, 83, 83);
+    color: white;
+}
+/*home section end*/
+
+/*about us section start*/
+
+#about{
+    width: 100%;
+    height: 100vh;
+}
+#about .container{
+    padding-top: 7em;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 2em;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+#about .card{
+    border-radius: 15px;
+}
+#about .card img{
+    border-radius: 15px;
+}
+#about-btn{
+    width: 10em;
+    height: 2em;
+    margin-top: 20px;
+    background: white;
+    border-radius: 0.5em;
+    font-weight: bold;
+    border: 1px solid rgb(245, 83, 83);
+    transition: 0.5s ease;
+}
+#about-btn:hover{
+    background-color:rgb(245, 83, 83);
+    color: white;
+}
+@media screen and (max-width:982px){
+    #about p{
+        font-size: 8px;
+    }
+    
+}
+@media screen and (max-width:766px){
+    #about p{
+        font-size: 19px;
+    }
+    #about{
+        height: 120vh;
+    }
+}
+/*about us section end*/
+
+
+/*products section start*/
+
+#products{
+    width: 100%;
+    margin-top: 5em;
+}
+.heading2{
+    text-align: center;
+    margin-bottom: 2em;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(241, 189, 189);
+}
+#container2{
+    margin-top: 5em;
+}
+#products .card{
+    box-shadow: rgba(149, 157, 165,0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+#products .card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#products h3{
+    color: rgb(245, 83, 83);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+#products p{
+    color: rgb(245, 83, 83);
+    font-size: 15px;
+    padding-top: 10px;
+}
+#products p span{
+    float: right;
+    cursor: pointer;
+}
+.star i{
+    color: rgb(245, 83, 83);
+}
+/*products section end*/
+
+/*contact us section start*/
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 250px;
+}
+#contact .container{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(90deg , white 80%, rgb(228, 110, 110) 20%);
+    border-radius: 10px;
+}
+.heading3{
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contact-btn{
+    width: 10em;
+    color: white;
+    height: 2em;
+    margin-top: 20px;
+    background: rgb(245, 83, 83);
+    font-weight: bold;
+    border: none;
+}
+#contact p{
+    font-weight: bold;
+    font-size: 15px;
+}
+#contact input{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid rgb(228, 110, 110);
+}
+#col{
+    width: 40%;
+    height: 56vh;
+    background: black;
+    margin-top: 75px;
+}
+#contact h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 13px;
+}
+#contact #col p{
+    font-size: 15px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 13px;
+    font-weight: 200;
+}
+
+@media screen and (max-width:766px) {
+    #contact .container{
+        
+        background: white;
+       
+    }
+    #col{
+        width: 100%;
+        background: rgb(228, 110, 110);
+    }
+    #contact{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:400px){
+    #contact input{
+        width: 250px;
+        
+    }
+
+}
+/*contact us section end*/
+
+/*footer section start*/
+#footer{
+    width: 100%;
+    background: rgb(241, 189, 189);
+    margin-top: 50px;
+}
+.footer-logo{
+    font-size: 2em;
+    font-weight: 300;
+}
+#footer .socail-links i{
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.credits{
+    color: rgb(250, 56, 56);
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.copyright span{
+    color: black;
+}
+/*footer section end*/
+
+
+
+/* log in*/
+.infinity-image-container{
+	background: url('./imgs/about.png') center no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.infinity-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infinity-form{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.infinity-form h4 {
+    font-weight: bold;
+}
+
+.infinity-form .form-input {
+    position: relative;
+}
+
+.infinity-form .form-input input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #777;
+    outline: none;
+    background: transparent;
+    padding-left: 40px;
+    font-weight: bold;
+    color: #777;
+}
+
+.infinity-form .form-input span {
+    position: absolute;
+    top: 8px;
+    padding-left: 10px;
+    color: #777;
+}
+
+.infinity-form .form-input input:focus,
+.infinity-form .form-input input:valid {
+    border-bottom: 2px solid rgb(245, 83, 83);   
+}
+
+.infinity-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: rgb(245, 83, 83) !important;
+  border:0px;
+}
+
+.infinity-form button {
+    margin-top: 10px;
+    border: 1px solid rgb(245, 83, 83);
+    cursor: pointer;
+    border-radius: 20px;
+    background: white;  
+    color: rgb(245, 83, 83);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.infinity-form button:hover {
+    background: rgb(245, 83, 83); 
+    color: white;  
+}
+
+.forget-link , .login-link , .register-link {
+    color: #709de8;
+    font-weight: bold;
+}
+
+.forget-link:hover , .login-link:hover , .register-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.infinity-form .btn-social {
+    color: white;
+    border: 0;
+    display: inline-block;
+    margin: 0px;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin-bottom: 10px;
+}
+
+.infinity-form .btn-facebook {
+    color: #4866a8;
+}
+
+.infinity-form .btn-google {
+    color: #da3f34;
+}
+
+.infinity-form .btn-twitter {
+    color: #33ccff;
+}
+
+.infinity-form .btn-facebook:hover {
+    color: white;
+    background: hsla(221, 40%, 40%, 1);
+}
+
+.infinity-form .btn-google:hover {
+    color: white;
+    background: hsla(4, 59%, 47%, 1);
+}
+
+.infinity-form .btn-twitter:hover {
+    color: white;
+    background: hsla(195, 78%, 54%, 1);
+}
+/*log in end*/
